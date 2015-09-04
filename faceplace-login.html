@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/loading.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#login_a").click(function(){
+        $("#login_button").fadeOut('slow');
+        $("#logo").fadeOut('slow');
+        $("#username_input").fadeOut('slow');
+        $("#password_input").fadeOut('slow', function() {
+            $( "#loading_screen" ).show(0, function () {
+                $( ".spinner-container" ).fadeIn( "slow");
+              });
+          });
+    });
+});
+</script>
+</head>
+<body>
+
+<div id="faceplacewindow">
+<div id="logo"></div>
+
+<div id="form_login">
+<form action="">
+<input id="username_input" type="text" name="user" placeholder="username"><br>
+<input id="password_input" type="text" name="password" placeholder="password">
+</form>
+<div id="login_button"><a id="login_a" href="#">Login</a></div>
+</div>
+</div>
+<div id="loading_screen">
+	<div class="spinner">
+	  <div class="spinner-container container1">
+	    <div class="circle1"></div>
+	    <div class="circle2"></div>
+	    <div class="circle3"></div>
+	    <div class="circle4"></div>
+	  </div>
+	  <div class="spinner-container container2">
+	    <div class="circle1"></div>
+	    <div class="circle2"></div>
+	    <div class="circle3"></div>
+	    <div class="circle4"></div>
+	  </div>
+	  <div class="spinner-container container3">
+	    <div class="circle1"></div>
+	    <div class="circle2"></div>
+	    <div class="circle3"></div>
+	    <div class="circle4"></div>
+	  </div>
+	</div>
+</div>
+</body>
+</html>

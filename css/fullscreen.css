@@ -1,0 +1,163 @@
+body {
+	margin-top: 100px;
+}
+
+#faceplacewindow {
+	width: 840px;
+	height: 650px;
+	
+	margin: 0 auto;
+}
+
+#form_login {
+	padding-top: 193px;
+	padding-left: 270px;
+	opacity: 0;
+	-webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+	-webkit-animation-delay: 1s; /* Chrome, Safari, Opera */
+	-webkit-animation-fill-mode: forwards;
+	       -moz-animation: fadein 1s; /* Firefox < 16 */
+	        -ms-animation: fadein 1s; /* Internet Explorer */
+	         -o-animation: fadein 1s; /* Opera < 12.1 */
+	            animation: fadein 1s;
+}
+
+#username_input {
+	background: transparent;
+	width: 290px;
+	height: 35px;
+	padding-top: 3px;
+	padding-left: 6px;
+	font: 17px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	border: none;
+	color: #F39C12;
+	background-color: #FAE5C5;
+}
+
+#password_input {
+	background: transparent;
+	width: 290px;
+	height: 35px;
+	padding-top: 1px;
+	padding-left: 6px;
+	margin-top: 9px;
+	font: 17px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	border: none;
+	background-color: #FAE5C5;
+	color: #F39C12;
+}
+
+#login_button {
+	width: 280px;
+	margin-top: 30px;
+	padding: 4px;
+}
+
+#login_button a {
+	text-align: center;
+	margin: 0 auto;
+	width: 200px;;
+	display: block;
+	text-decoration: none;
+	color: #ffffff;
+	font: 20px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+		border: 1px solid #fff;
+		padding: 4px;
+		border-radius: 167px;
+	
+}
+
+#login_button a:hover {
+	color: #F39C12;
+	background-color: #fff;
+}
+
+textarea:focus, input:focus{
+    outline: 0;
+}
+
+::-webkit-input-placeholder {
+	color: #F39C12;
+}
+
+#logo {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    -webkit-animation-name: example; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 1s; /* Chrome, Safari, Opera */
+    -webkit-animation-delay: 1s; /* Chrome, Safari, Opera */
+    -webkit-animation-fill-mode: forwards;
+    animation-name: example;
+    animation-duration: 1s;
+    animation-delay: 1s;
+}
+.spinner {
+  margin: 100px auto;
+  width: 50px;
+  height: 30px;
+  text-align: center;
+  font-size: 10px;
+}
+
+.spinner > div {
+  background-color: #F39C12;
+  height: 100%;
+  width: 6px;
+  display: inline-block;
+  
+  -webkit-animation: stretchdelay 1.2s infinite ease-in-out;
+  animation: stretchdelay 1.2s infinite ease-in-out;
+}
+
+.spinner .rect2 {
+  -webkit-animation-delay: -1.1s;
+  animation-delay: -1.1s;
+}
+
+.spinner .rect3 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+
+.spinner .rect4 {
+  -webkit-animation-delay: -0.9s;
+  animation-delay: -0.9s;
+}
+
+.spinner .rect5 {
+  -webkit-animation-delay: -0.8s;
+  animation-delay: -0.8s;
+}
+
+@-webkit-keyframes stretchdelay {
+  0%, 40%, 100% { -webkit-transform: scaleY(0.4) }  
+  20% { -webkit-transform: scaleY(1.0) }
+}
+
+@keyframes stretchdelay {
+  0%, 40%, 100% { 
+    transform: scaleY(0.4);
+    -webkit-transform: scaleY(0.4);
+  }  20% { 
+    transform: scaleY(1.0);
+    -webkit-transform: scaleY(1.0);
+  }
+}
+
+#loading_screen {
+	width: 100%;
+	height: 400px;
+	position: fixed;
+	top: 0;
+	margin-top: 200px;
+	text-align: center;
+	margin-left: -15px;
+}
+
+#loading_text {
+	margin-top: -160px;
+	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: rgba(243, 155, 17, 0.53);
+}

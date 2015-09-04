@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/fullscreen.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#faceplacewindow").mousedown(function(){
+        $(this).css('background-image','url(images/annie_connecting_clickfull.png)');
+    });
+    $("#faceplacewindow").mouseup(function(){
+        $(this).css('background-image','url(images/connecting.png)');
+    });
+});
+</script>
+</head>
+<body>
+
+<div id="faceplacewindow">
+
+</div>
+<div id="loading_screen">
+	<div class="spinner">
+	  <div class="rect1"></div>
+	  <div class="rect2"></div>
+	  <div class="rect3"></div>
+	  <div class="rect4"></div>
+	  <div class="rect5"></div>
+	</div>
+	<div id="loading_text">
+	<span>call dropped</span>
+	</div>
+</div>
+</body>
+</html>
